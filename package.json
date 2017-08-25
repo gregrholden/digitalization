@@ -1,0 +1,44 @@
+{
+  "name": "digitalization",
+  "version": "1.0.0",
+  "description": "Final project for UMUC course CMST386 - Web Design and Tech II",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregrholden/digitalization.git"
+  },
+  "keywords": [
+    "digitalization",
+    "digitization",
+    "R&D"
+  ],
+  "author": "Greg Holden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregrholden/digitalization/issues"
+  },
+  "homepage": "https://github.com/gregrholden/digitalization#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rev": "^8.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "gulp-watch": "^4.3.11",
+    "webpack": "^3.5.5"
+  }
+}
