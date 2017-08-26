@@ -1,7 +1,6 @@
 
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Exo+2%7CJosefin+Slab%7CRoboto+Slab');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -364,6 +363,7 @@ template {
 body {
   font-family: 'Exo 2', sans-serif;
   background-color: #0B6EE0;
+  text-shadow: 1px 1px 4px black;
 }
 img {
   max-width: 100%;
@@ -371,6 +371,7 @@ img {
 }
 h3 {
   font-family: 'Roboto Slab', serif;
+  text-shadow: 2px 2px 2px black;
 }
 a {
   text-decoration: none;
@@ -381,14 +382,30 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.fa-text {
+  font-family: "Exo 2", sans-serif;
+}
 .navbar {
   background-color: #404042;
+  text-shadow: none;
 }
 .navbar .navbar-brand {
     width: 275px;
     overflow: hidden;
     margin-top: -7px;
   }
+.navbar #aboutLink:hover, .navbar #aboutLink:focus {
+      color: #0B6EE0;
+    }
+.navbar #bigdata:hover, .navbar #bigdata:focus {
+      color: #FE2C6B;
+    }
+.navbar #collaboration:hover, .navbar #collaboration:focus {
+      color: #FFD548;
+    }
+.navbar #ves:hover {
+      color: #74C648;
+    }
 .jumbotron {
   background-color: inherit;
   color: #FFF;
@@ -416,3 +433,25 @@ a {
   margin: 45px 0 0 0;
   color: #FFF;
 }
+.section__projects {
+    background-color: #FFF;
+    color: #0B6EE0;
+    text-shadow: none;
+  }
+.section__projects__title {
+      font-size: 32px;
+      font-size: 2rem;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  max-width: 75%;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.img-thumbnail:hover {
+    border: 1px solid #5C5C5C;
+  }

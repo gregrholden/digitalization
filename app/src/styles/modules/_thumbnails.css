@@ -1,0 +1,5 @@
+.img-thumbnail {
+  &:hover {
+    border: 1px solid $lightGrey;
+  }
+}

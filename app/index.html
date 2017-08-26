@@ -7,6 +7,8 @@
   <meta name="copyright" content="The Industrial Research Institute, Inc.">
   <meta name="author" content="Greg Holden">
   <meta name="robots" content="index, follow">
+  <!-- Font Awesome CDN-->
+  <script src="https://use.fontawesome.com/5e0443a723.js"></script>
   <!--build:css assets/styles/styles.css-->
   <link rel="stylesheet" href="assets/styles/styles.css">
   <!--endbuild-->
@@ -25,19 +27,17 @@
     <!-- navbar contents-->
     <div class="collapse navbar-collapse justify-content-between" id="myNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
-          <div class="dropdown-menu"><a class="dropdown-item" href="#about">About IRI</a><a class="dropdown-item" href="#faq">FAQ</a></div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#bigdata">Big Data</a></li>
-        <li class="nav-item"><a class="nav-link" href="#collaboration">Collaboration</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ves">VE&amp;S</a></li>
+        <li class="nav-item"><a class="nav-link" id="aboutLink" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" id="bigdata" href="#projects">Big Data</a></li>
+        <li class="nav-item"><a class="nav-link" id="collaboration" href="#projects">Collaboration</a></li>
+        <li class="nav-item"><a class="nav-link" id="ves" href="#projects">VE&amp;S</a></li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-envelope-o"><span class="fa-text"> Contact</span></i></a></li>
       </ul>
     </div>
   </nav>
-  <div class="row section justify-content-between">
+  <div class="row section justify-content-between" id="about">
     <div class="col-md-7 txt">
       Every two years, the Industrial Research Institute (IRI) endeavors to 
       make a big splash with their research via a large-scale project.
@@ -46,31 +46,18 @@
       using futurist forecasting tools and techniques. The 
       current project, which ends the week of October 16, 2016, is on 
       the implications of the rising "Digital Era" on the function and 
-      management of R&amp;D.
-      <br>
-      <br>
-      This project received a kick start from a thought-provoking presentation
+      management of R&amp;D.<br><br>This project received a kick start from a thought-provoking presentation
       by Temple University's Dr. Youngjin Yoo who spoke at the 2014 IRI 
-      Member Summit in Denver, Colorado.
-      <br>
-      <br>
-      Following Dr. Yoo's presentation, discussions began on how to incorporate
+      Member Summit in Denver, Colorado.<br><br>Following Dr. Yoo's presentation, discussions began on how to incorporate
       his ideas into a research project. IRI's next big thing, the 
       Digitalization Project, as it became known, got its official start
-      shortly thereafter, in early 2015.
-      <br>
-      <br>
-      
-      <h3>The Digitalization Research Platform</h3>
-      This project consists of R&amp;D managers and executives from large,
+      shortly thereafter, in early 2015.<br><br><br>
+      <h3>The Digitalization Research Platform</h3><br>This project consists of R&amp;D managers and executives from large,
       product development companies coming together at IRI events, and
       virtually, to collaborate on how digitalization affects their 
       respective industries. The project is broken into three groups: 
       Big Data, Collaboration, and Virtual Experimentation &amp; Simulation, 
-      or VE&amp;S.
-      <br>
-      <br>
-      The Digitalization Project will culminate at the 
+      or VE&amp;S.<br><br>The Digitalization Project will culminate at the 
       2016 Member Summit in Chicago, Illinois, where all three project 
       teams will be presenting their findings. It is the intention of 
       this project to provide a comprehensive guide for maximizing the 
@@ -80,12 +67,31 @@
       take-aways that can be implemented in the near term.
     </div>
     <div class="col-md-4 txt">
-      <h3><i class="fa fa-rocket">  Launch Date: Early 2015</i></h3><br>
-      <h3><i class="fa fa-paperclip">  Wrap-Up Date: October 2016</i></h3><br>
-      <iframe src="https://www.youtube.com/embed/FN1veSd7LEY" width="420px" height="236px" allowfullscreen></iframe>
+      <h3><i class="fa fa-rocket"> <span class="fa-text">Launch Date: Early 2015</span></i></h3><br>
+      <h3><i class="fa fa-paperclip"> <span class="fa-text">Wrap-Up Date: October 2016</span></i></h3><br>
+      <iframe src="https://www.youtube.com/embed/FN1veSd7LEY" width="420px" height="250px" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="row section section__projects"></div>
+  <div class="row section section__projects" id="projects">
+    <div class="section__projects__title ml-auto mr-auto">The Digitalization Research Working Groups</div><br><br>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="img-thumbnail"><a href="#"><img src="assets/images/bigdata.jpg" alt="Big Data Icon"></a>
+          <p><strong>Big Data</strong></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-thumbnail"><a href="#"><img src="assets/images/collaboration.jpg" alt="Collaboration Icon"></a>
+          <p><strong>Collaboration</strong></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-thumbnail"><a href="#"><img src="assets/images/ves.jpg" alt="Virtual Experimentation and Simulation Icon"></a>
+          <p><strong>Virtual Experimentation &amp; Simulation</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- build:js assets/scripts/App.js-->
   <script src="assets/scripts/App.js"></script>
   <!-- endbuild-->

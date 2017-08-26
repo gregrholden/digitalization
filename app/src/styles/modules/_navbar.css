@@ -1,9 +1,31 @@
 .navbar {
   background-color: $darkGrey;
+  text-shadow: none;
 
   .navbar-brand {
     width: 275px;
     overflow: hidden;
     margin-top: -7px;
+  }
+  #aboutLink {
+    &:hover, &:focus {
+      color: $mainBlue;
+    }
+  }
+
+  #bigdata {
+    &:hover, &:focus {
+      color: $pink;
+    }
+  }
+  #collaboration {
+    &:hover, &:focus {
+      color: $yellow;
+    }
+  }
+  #ves {
+    &:hover {
+      color: $green;
+    }
   }
 }

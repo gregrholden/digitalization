@@ -1,6 +1,7 @@
 body {
   font-family: 'Exo 2', sans-serif;
   background-color: $mainBlue;
+  text-shadow: 1px 1px 4px black;
 }
 
 img {
@@ -10,6 +11,7 @@ img {
 
 h3 {
   font-family: 'Roboto Slab', serif;
+  text-shadow: 2px 2px 2px black;
 }
 
 a {

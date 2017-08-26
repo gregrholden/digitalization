@@ -7,6 +7,8 @@ head
   meta(name='copyright' content='The Industrial Research Institute, Inc.')
   meta(name='author' content='Greg Holden')
   meta(name='robots' content='index, follow')
+  // Font Awesome CDN
+  script(src="https://use.fontawesome.com/5e0443a723.js")
   //build:css assets/styles/styles.css
   link(rel='stylesheet' href='assets/styles/styles.css')
   //endbuild
@@ -26,23 +28,20 @@ body(data-spy='scroll' data-targt='.navbar' data-offset='50')
     // navbar contents
     div.collapse.navbar-collapse.justify-content-between#myNavbar
       ul.navbar-nav
-        li.nav-item.dropdown
-          a.nav-link.dropdown-toggle(href="#" data-toggle="dropdown") About
-          div.dropdown-menu
-            a.dropdown-item(href='#about') About IRI
-            a.dropdown-item(href='#faq') FAQ
         li.nav-item
-          a.nav-link(href='#bigdata') Big Data
+          a.nav-link#aboutLink(href="#about") About
         li.nav-item
-          a.nav-link(href='#collaboration') Collaboration
+          a.nav-link#bigdata(href='#projects') Big Data
         li.nav-item
-          a.nav-link(href='#ves') VE&amp;S
+          a.nav-link#collaboration(href='#projects') Collaboration
+        li.nav-item
+          a.nav-link#ves(href='#projects') VE&amp;S
       ul.navbar-nav
         li.nav-item
-          a.nav-link(href='#contact') Contact
+          a.nav-link(href='#contact'): i.fa.fa-envelope-o #[span.fa-text  Contact]
           
           
-  div.row.section.justify-content-between
+  div.row.section.justify-content-between#about
     div.col-md-7.txt
       | Every two years, the Industrial Research Institute (IRI) endeavors to 
       | make a big splash with their research via a large-scale project.
@@ -52,28 +51,30 @@ body(data-spy='scroll' data-targt='.navbar' data-offset='50')
       | current project, which ends the week of October 16, 2016, is on 
       | the implications of the rising "Digital Era" on the function and 
       | management of R&amp;D.
-      | #[br]
-      | #[br]
+      br
+      br
       | This project received a kick start from a thought-provoking presentation
       | by Temple University's Dr. Youngjin Yoo who spoke at the 2014 IRI 
       | Member Summit in Denver, Colorado.
-      | #[br]
-      | #[br]
+      br
+      br
       | Following Dr. Yoo's presentation, discussions began on how to incorporate
       | his ideas into a research project. IRI's next big thing, the 
       | Digitalization Project, as it became known, got its official start
       | shortly thereafter, in early 2015.
-      | #[br]
-      | #[br]
-      | #[h3 The Digitalization Research Platform]
+      br
+      br
+      br
+      h3 The Digitalization Research Platform
+      br
       | This project consists of R&amp;D managers and executives from large,
       | product development companies coming together at IRI events, and
       | virtually, to collaborate on how digitalization affects their 
       | respective industries. The project is broken into three groups: 
       | Big Data, Collaboration, and Virtual Experimentation &amp; Simulation, 
       | or VE&amp;S.
-      | #[br]
-      | #[br]
+      br
+      br
       | The Digitalization Project will culminate at the 
       | 2016 Member Summit in Chicago, Illinois, where all three project 
       | teams will be presenting their findings. It is the intention of 
@@ -83,13 +84,31 @@ body(data-spy='scroll' data-targt='.navbar' data-offset='50')
       | practitioners, for practitioners, with a focus on tangible 
       | take-aways that can be implemented in the near term.
     div.col-md-4.txt
-      h3: i.fa.fa-rocket   Launch Date: Early 2015
+      h3: i.fa.fa-rocket  #[span.fa-text Launch Date: Early 2015]
       br
-      h3: i.fa.fa-paperclip   Wrap-Up Date: October 2016
+      h3: i.fa.fa-paperclip  #[span.fa-text Wrap-Up Date: October 2016]
       br
-      iframe(src='https://www.youtube.com/embed/FN1veSd7LEY' width='420px' height='236px' allowfullscreen)
+      iframe(src='https://www.youtube.com/embed/FN1veSd7LEY' width='420px' height='250px' allowfullscreen)
           
-  div.row.section.section__projects
+  div.row.section.section__projects#projects
+    div.section__projects__title.ml-auto.mr-auto The Digitalization Research Working Groups
+    br
+    br
+    div.row.text-center
+      div.col-md-4
+        div.img-thumbnail
+          a(href='#'): img(src='assets/images/bigdata.jpg' alt='Big Data Icon')
+          p: strong Big Data
+      div.col-md-4
+        div.img-thumbnail
+          a(href='#'): img(src='assets/images/collaboration.jpg' alt='Collaboration Icon')
+          p: strong Collaboration
+      div.col-md-4
+        div.img-thumbnail
+          a(href='#'): img(src='assets/images/ves.jpg' alt='Virtual Experimentation and Simulation Icon')
+          p: strong Virtual Experimentation &amp; Simulation
+    
+    
     
     
     

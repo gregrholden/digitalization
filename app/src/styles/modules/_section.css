@@ -2,4 +2,16 @@
   padding: 15px 15px 15px 60px;
   margin: 45px 0 0 0;
   color: #FFF;
+
+  &__projects {
+    background-color: #FFF;
+    color: $mainBlue;
+    text-shadow: none;
+
+    &__title {
+      font-size: 2rem;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
 }

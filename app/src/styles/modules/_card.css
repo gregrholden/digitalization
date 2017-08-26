@@ -1,0 +1,7 @@
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  max-width: 75%;
+  font-size: 1rem;
+}
