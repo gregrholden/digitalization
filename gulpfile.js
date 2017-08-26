@@ -1,4 +1,3 @@
-require('./gulp/tasks/bootstrap-js');
 require('./gulp/tasks/watch');
 require('./gulp/tasks/styles');
 require('./gulp/tasks/pug');

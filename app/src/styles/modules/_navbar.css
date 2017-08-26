@@ -1,0 +1,9 @@
+.navbar {
+  background-color: $darkGrey;
+
+  .navbar-brand {
+    width: 275px;
+    overflow: hidden;
+    margin-top: -7px;
+  }
+}

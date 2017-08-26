@@ -1,7 +1,103 @@
 doctype html
+html(lang='en')
 head
   meta(charset='utf-8')
-  title Digitalization and R&amps;D Management
-
-body
+  meta(name='description' content='Digitalization and R&D Management Homepage')
+  meta(name='keywords' content='digitalization, big data, collaboration, virtual experimentation, simulation')
+  meta(name='copyright' content='The Industrial Research Institute, Inc.')
+  meta(name='author' content='Greg Holden')
+  meta(name='robots' content='index, follow')
+  //build:css assets/styles/styles.css
+  link(rel='stylesheet' href='assets/styles/styles.css')
+  //endbuild
+  title Digitalization - Homepage
   
+body(data-spy='scroll' data-targt='.navbar' data-offset='50')
+  // Header/Logo
+  header.jumbotron
+    div.container-fluid
+      p.title Digitalization
+      p.subtitle And its Implications for R&amp;D Management
+      
+  nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top
+    button.navbar-toggler.navbar-toggler-right(type='button' data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#'): img.logo(src='assets/images/IRI-logo2.jpg' alt='IRI logo with gray background')
+    // navbar contents
+    div.collapse.navbar-collapse.justify-content-between#myNavbar
+      ul.navbar-nav
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" data-toggle="dropdown") About
+          div.dropdown-menu
+            a.dropdown-item(href='#about') About IRI
+            a.dropdown-item(href='#faq') FAQ
+        li.nav-item
+          a.nav-link(href='#bigdata') Big Data
+        li.nav-item
+          a.nav-link(href='#collaboration') Collaboration
+        li.nav-item
+          a.nav-link(href='#ves') VE&amp;S
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='#contact') Contact
+          
+          
+  div.row.section.justify-content-between
+    div.col-md-7.txt
+      | Every two years, the Industrial Research Institute (IRI) endeavors to 
+      | make a big splash with their research via a large-scale project.
+      | The first such project was called the #[em IRI2038 Futures Study], 
+      | which took a deep look into the future of managing research and development (R&amp;D)
+      | using futurist forecasting tools and techniques. The 
+      | current project, which ends the week of October 16, 2016, is on 
+      | the implications of the rising "Digital Era" on the function and 
+      | management of R&amp;D.
+      | #[br]
+      | #[br]
+      | This project received a kick start from a thought-provoking presentation
+      | by Temple University's Dr. Youngjin Yoo who spoke at the 2014 IRI 
+      | Member Summit in Denver, Colorado.
+      | #[br]
+      | #[br]
+      | Following Dr. Yoo's presentation, discussions began on how to incorporate
+      | his ideas into a research project. IRI's next big thing, the 
+      | Digitalization Project, as it became known, got its official start
+      | shortly thereafter, in early 2015.
+      | #[br]
+      | #[br]
+      | #[h3 The Digitalization Research Platform]
+      | This project consists of R&amp;D managers and executives from large,
+      | product development companies coming together at IRI events, and
+      | virtually, to collaborate on how digitalization affects their 
+      | respective industries. The project is broken into three groups: 
+      | Big Data, Collaboration, and Virtual Experimentation &amp; Simulation, 
+      | or VE&amp;S.
+      | #[br]
+      | #[br]
+      | The Digitalization Project will culminate at the 
+      | 2016 Member Summit in Chicago, Illinois, where all three project 
+      | teams will be presenting their findings. It is the intention of 
+      | this project to provide a comprehensive guide for maximizing the 
+      | benefits of digitalization on innovation while avoiding 
+      | common pitfalls. As with all IRI research, this project will be done by 
+      | practitioners, for practitioners, with a focus on tangible 
+      | take-aways that can be implemented in the near term.
+    div.col-md-4.txt
+      h3: i.fa.fa-rocket   Launch Date: Early 2015
+      br
+      h3: i.fa.fa-paperclip   Wrap-Up Date: October 2016
+      br
+      iframe(src='https://www.youtube.com/embed/FN1veSd7LEY' width='420px' height='236px' allowfullscreen)
+          
+  div.row.section.section__projects
+    
+    
+    
+  // build:js assets/scripts/App.js
+  script(src="assets/scripts/App.js")
+  // endbuild
+  
+  // Bootstrap JS CDNs
+  script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")

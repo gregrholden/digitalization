@@ -1,3 +1,3 @@
 const gulp = require('gulp');
 
-gulp.task('default', ['bootstrap-js', 'watch']);
+gulp.task('default', ['watch']);

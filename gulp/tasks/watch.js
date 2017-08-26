@@ -23,8 +23,8 @@ gulp.task('watch', function() {
   });
 
   // watch for changes to CSS files
-  gulp.watch('./app/src/styles/**/*.scss', function() {
-    gulp.start('scssInject');
+  gulp.watch('./app/src/styles/**/*.css', function() {
+    gulp.start('cssInject');
   });
 
   // watch for changes to javascripts
@@ -40,7 +40,7 @@ gulp.task('htmlRefresh', ['pug'], function() {
 });
 
 // Stream changes made to SCSS files
-gulp.task('scssInject', ['styles'], function() {
+gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/assets/styles/styles.css')
     .pipe(browserSync.stream());
 });
