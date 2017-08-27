@@ -1,0 +1,34 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-logo {
+  width: 300px;
+}
+
+.icon {
+  font-size: 35px;
+  margin-left: 35px;
+  color: #FFF;
+  &--fb {
+    &:hover {
+      color: $facebook;
+    }
+  }
+  &--tw {
+    &:hover {
+      color: $twitter;
+    }
+  }
+  &--li {
+    &:hover {
+      color: $linkedin;
+    }
+  }
+  &--yt {
+    &:hover {
+      color: $youtube;
+    }
+  }
+}

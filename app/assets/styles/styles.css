@@ -365,10 +365,6 @@ body {
   background-color: #0B6EE0;
   text-shadow: 1px 1px 4px black;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 h3 {
   font-family: 'Roboto Slab', serif;
   text-shadow: 2px 2px 2px black;
@@ -382,6 +378,30 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-logo {
+  width: 300px;
+}
+.icon {
+  font-size: 35px;
+  margin-left: 35px;
+  color: #FFF;
+}
+.icon--fb:hover {
+      color: #3B5998;
+    }
+.icon--tw:hover {
+      color: #55ACEE;
+    }
+.icon--li:hover {
+      color: #1B86BC;
+    }
+.icon--yt:hover {
+      color: #CC181E;
+    }
 .fa-text {
   font-family: "Exo 2", sans-serif;
 }
@@ -444,14 +464,21 @@ a {
       margin-top: 60px;
       margin-bottom: 60px;
     }
-.card {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-  max-width: 75%;
-  font-size: 16px;
-  font-size: 1rem;
-}
 .img-thumbnail:hover {
     border: 1px solid #5C5C5C;
   }
+.footer {
+  color: #FFF;
+  background-color: #404042;
+  padding: 15px 35px;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: none;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+.footer .valid {
+    width: 75px;
+  }
+.footer .valid-css3 {
+      width: 85px;
+    }

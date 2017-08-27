@@ -4,11 +4,6 @@ body {
   text-shadow: 1px 1px 4px black;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 h3 {
   font-family: 'Roboto Slab', serif;
   text-shadow: 2px 2px 2px black;

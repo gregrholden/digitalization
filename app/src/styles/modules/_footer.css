@@ -1,0 +1,14 @@
+.footer {
+  color: #FFF;
+  background-color: $darkGrey;
+  padding: 15px 35px;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: none;
+  font-size: 0.8rem;
+  .valid {
+    width: 75px;
+    &-css3 {
+      width: 85px;
+    }
+  }
+}
