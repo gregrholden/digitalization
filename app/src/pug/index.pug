@@ -38,7 +38,7 @@ body(data-spy='scroll' data-targt='.navbar' data-offset='50')
           a.nav-link#ves(href='#projects') VE&amp;S
       ul.navbar-nav
         li.nav-item
-          a.nav-link(href='#contact'): i.fa.fa-envelope-o #[span.fa-text  Contact]
+          a.nav-link(href='http://www.iriweb.org/staff' target='_blank'): i.fa.fa-envelope-o  #[span.fa-text  Contact]
           
           
   section.row.section.justify-content-between#about
@@ -94,39 +94,73 @@ body(data-spy='scroll' data-targt='.navbar' data-offset='50')
     div.section__projects__title.ml-auto.mr-auto The Digitalization Research Working Groups
     br
     br
-    div.row.text-center
-      div.col-md-4
-        div.img-thumbnail
-          a(href='#'): img(src='assets/images/bigdata.jpg' alt='Big Data Icon')
-          p: strong Big Data
-      div.col-md-4
-        div.img-thumbnail
-          a(href='#'): img(src='assets/images/collaboration.jpg' alt='Collaboration Icon')
-          p: strong Collaboration
-      div.col-md-4
-        div.img-thumbnail
-          a(href='#'): img(src='assets/images/ves.jpg' alt='Virtual Experimentation and Simulation Icon')
-          p: strong Virtual Experimentation &amp; Simulation
-    
+    div.row.text-center.projects.ml-auto.mr-auto
+      div.flip-container(ontouchstart='this.classList.toggle("hover");')
+        div.flipper
+          div.front
+            p.img-thumbnail: img(src='assets/images/bigdata.jpg' alt='Big Data Icon')
+            p: strong Big Data
+          div.back.back__bigdata
+            p.text.text__bigdata
+              | Big Data is an oft-touted term that has no commonly agreed-upon 
+              | definition despite its prevalent use.
+              | The overall purpose of this group is to look at how Big Data, defined
+              | as "uncomfortable data", can inform,
+              | empower, and/or disrupt R&amp;D organizations based on how they 
+              | manage their R&amp;D processes with or without its use
+      div.flip-container(ontouchstart='this.classList.toggle("hover");')
+        div.flipper
+          div.front
+            p.img-thumbnail: img(src='assets/images/collaboration.jpg' alt='Collaboration Icon')
+            p: strong Collaboration
+          div.back.back__collab
+            p.text.text__collab
+              | Considering the ubiquitousness of internet connectivity and smart 
+              | devices, instantaneous communication and collaboration has become 
+              | commonplace. The pace of development of tools that enable 
+              | real-time collaboration from anywhere has also witnessed 
+              | an explosion recently. How can R&amp;D organizations 
+              | navigate the landscape of these tools to the best effect?
+      div.flip-container(ontouchstart='this.classList.toggle("hover");')
+        div.flipper
+          div.front
+            p.img-thumbnail: img(src='assets/images/ves.jpg' alt='Virtual Experimentation and Simulation Icon')
+            p: strong Virtual Experimentation &amp; Simulation
+          div.back.back__ves
+            p.text.text__ves
+              | Any physical experiment necessarily 
+              | includes a set of data that is not quantifiable; results from each iteration carry 
+              | intuition that researchers develop throughout their careers based
+              | on the expectations of how real world conditions affect their experiments. However, 
+              | twenty-first century research requires much more use of virtual 
+              | laboratories and simulation software 
+              | that mimic real world conditions. How do we gain trust in such 
+              | simulations knowing that they may not capture conditions perfectly?
+  
+  section.section.text-center.mb-4
+    a.btn.btn-secondary(href='#' role='button').return Return to Top
+  
   footer.footer
     div.row.justify-content-between
-      p.footer--left.col-sm-6.d-block.text-left
+      p.footer--left.col-xs-6
+        br
         br
         | Greg Holden
         br
-        | Copyright &copy; 2017
+        | Copyright &copy; 2017a
         br
-        a(href='#'): img(class='valid' src='assets/images/W3C_HTML5_Validation.png' alt='HTML5 Validated Icon')
-        a(href='#'): img(class='valid valid-css3' src='assets/images/W3C_CSS3_Validated.png' alt='HTML5 Validated Icon')
-      p.footer--right.col-sm-6.d-block.text-right
-        | #[img.footer-logo(src='assets/images/IRI-logo2.jpg' alt='IRI logo with grey background')]
+        img(class='valid' src='assets/images/W3C_HTML5_Validation.png' alt='HTML5 Validated Icon')
+        img(class='valid valid-css3' src='assets/images/W3C_CSS3_Validated.png' alt='HTML5 Validated Icon')
+      p.footer--right.col-xs-6.text-right
+        | #[a(href='https://www.iriweb.org' target='_blank'): img.footer-logo(src='assets/images/IRI-logo2.jpg' alt='IRI logo with grey background')]
         br
         | Creating Innovation Leadership Solutions
         br
-        a.icon.icon--fb(href='https://www.facebook.com/iriweb'): i.fa.fa-facebook-square
-        a.icon.icon--tw(href='https://www.twitter.com/iriweb'): i.fa.fa-twitter-square
-        a.icon.icon--li(href='https://www.linkedin.com/groups/87051'): i.fa.fa-linkedin-square
-        a.icon.icon--yt(href='https://www.youtube.com/channel/UC9usjJC2sEICK8w4ZvNA8dA'): i.fa.fa-youtube-square
+        a.icon.icon--fb(href='https://www.facebook.com/iriweb' target='_blank'): i.fa.fa-facebook-square
+        a.icon.icon--tw(href='https://www.twitter.com/iriweb' target='_blank'): i.fa.fa-twitter-square
+        a.icon.icon--li(href='https://www.linkedin.com/groups/87051' target='_blank'): i.fa.fa-linkedin-square
+        a.icon.icon--yt(href='https://www.youtube.com/channel/UC9usjJC2sEICK8w4ZvNA8dA' target='_blank'): i.fa.fa-youtube-square
+    
     
   // build:js assets/scripts/App.js
   script(src="assets/scripts/App.js")

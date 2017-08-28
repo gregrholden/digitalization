@@ -7,11 +7,6 @@
     overflow: hidden;
     margin-top: -7px;
   }
-  #aboutLink {
-    &:hover, &:focus {
-      color: $mainBlue;
-    }
-  }
 
   #bigdata {
     &:hover, &:focus {

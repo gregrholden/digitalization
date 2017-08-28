@@ -1,0 +1,8 @@
+.return {
+  color: $darkGrey;
+  text-shadow: none;
+  cursor: pointer;
+  &:visited, &:active {
+    outline: none;
+  }
+}

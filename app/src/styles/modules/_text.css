@@ -1,0 +1,12 @@
+.text {
+  padding: 55px;
+  &__bigdata {
+    transform: translateY(20%);
+  }
+  &__collab {
+    transform: translateY(15%);
+  }
+  &__ves {
+    transform: translateY(10%);
+  }
+}

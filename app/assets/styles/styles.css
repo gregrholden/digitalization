@@ -378,6 +378,50 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.text {
+  padding: 55px;
+}
+.text__bigdata {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+.text__collab {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+.text__ves {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+.return {
+  color: #404042;
+  text-shadow: none;
+  cursor: pointer;
+}
+.return:visited, .return:active {
+    outline: none;
+  }
+.fa-text {
+  font-family: "Exo 2", sans-serif;
+}
+.navbar {
+  background-color: #404042;
+  text-shadow: none;
+}
+.navbar .navbar-brand {
+    width: 275px;
+    overflow: hidden;
+    margin-top: -7px;
+  }
+.navbar #bigdata:hover, .navbar #bigdata:focus {
+      color: #FE2C6B;
+    }
+.navbar #collaboration:hover, .navbar #collaboration:focus {
+      color: #FFD548;
+    }
+.navbar #ves:hover {
+      color: #74C648;
+    }
 img {
   max-width: 100%;
   height: auto;
@@ -401,30 +445,6 @@ img {
     }
 .icon--yt:hover {
       color: #CC181E;
-    }
-.fa-text {
-  font-family: "Exo 2", sans-serif;
-}
-.navbar {
-  background-color: #404042;
-  text-shadow: none;
-}
-.navbar .navbar-brand {
-    width: 275px;
-    overflow: hidden;
-    margin-top: -7px;
-  }
-.navbar #aboutLink:hover, .navbar #aboutLink:focus {
-      color: #0B6EE0;
-    }
-.navbar #bigdata:hover, .navbar #bigdata:focus {
-      color: #FE2C6B;
-    }
-.navbar #collaboration:hover, .navbar #collaboration:focus {
-      color: #FFD548;
-    }
-.navbar #ves:hover {
-      color: #74C648;
     }
 .jumbotron {
   background-color: inherit;
@@ -482,3 +502,53 @@ img {
 .footer .valid-css3 {
       width: 85px;
     }
+.flip-container {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  margin-bottom: 45px;
+}
+.flip-container:not(:first-child) {
+    margin-left: 45px;
+  }
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+  width: 450px;
+  height: 475px;
+}
+.flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  color: #FFF;
+}
+.back__bigdata {
+    background-color: #FE2C6B;
+  }
+.back__collab {
+    background-color: #FFD548;
+    color: black;
+  }
+.back__ves {
+    background-color: #74C648;
+  }
